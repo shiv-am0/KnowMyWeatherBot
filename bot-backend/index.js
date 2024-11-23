@@ -5,6 +5,9 @@ const { subscribeUser, unsubscribeUser } = require("./controllers/userController
 const { connectMongoDb } = require("./db/config");
 require('dotenv').config();
 
+// Initialize MongoDB database
+connectMongoDb();
+
 // Initialize the Telegram Bot
 const bot = new Telegraf(process.env.BOT_TOKEN);
 
@@ -21,9 +24,6 @@ locationInput.on(message("text"), async ctx => {
 
 const stage = new Scenes.Stage([locationInput]);
 bot.use(stage.middleware());
-
-// Initialize MongoDB database
-connectMongoDb();
 
 // Handle '/start' command in bot
 bot.start((ctx) => {

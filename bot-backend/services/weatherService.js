@@ -8,7 +8,7 @@ async function getWeatherUpdates(location) {
         return weatherMessage;
     } catch (error) {
         console.error('Error fetching weather data:', error);
-        return "Unable to fetch weather data. Sorry for the inconvinience!"
+        return `Unable to fetch weather data for ${location} as it's data might not be available. Try choosing another city.`
     }
 };
 

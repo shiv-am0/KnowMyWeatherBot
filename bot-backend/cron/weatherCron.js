@@ -5,7 +5,7 @@ const { getWeatherUpdates } = require('../services/weatherService');
 // Start cron job to send weather updates
 const startWeatherUpdates = async (bot) => {
     // Cron expression
-    cron.schedule('18 20 * * *', async () => {
+    cron.schedule('00 18 * * *', async () => {
         console.log("Cron initiated...");
         const subscribedUsers = await User.find({ isSubscribed: true });
 
