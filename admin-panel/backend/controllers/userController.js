@@ -12,8 +12,9 @@ const getUsers = async (req, res) => {
 const blockUser = async (req, res) => {
     try {
         const { chatId } = req.params;
+        const { isBlocked } = req.body;
         console.log(chatId);
-        const user = await User.findOneAndUpdate({ chatId }, { isBlocked: true }, { new: true });
+        const user = await User.findOneAndUpdate({ chatId }, { isBlocked: isBlocked }, { new: true });
         res.status(200).json(user);
     } catch (error) {
         console.error(error);
