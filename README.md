@@ -20,8 +20,8 @@ The bot provides a simple and effective way to get real-time weather updates, an
 * **Bot Name**: KnowMyWeatherBot
 * **Bot Handle**: @KnowMyWeatherBot
 * **How to Use**:
-        1. Open the Telegram app and search for WeatherBot.
-        2. Click Start to interact with the bot.
-        3. To subscribe, type /subscribe and provide your location.
-        4. To unsubscribe, type /unsubscribe.
-        5. The bot will send you daily weather updates at a scheduled time.
+        - Open the Telegram app and search for WeatherBot.
+        - Click Start to interact with the bot.
+        - To subscribe, type /subscribe and provide your location.
+        - To unsubscribe, type /unsubscribe.
+        - The bot will send you daily weather updates at a scheduled time.
