@@ -13,4 +13,7 @@ const connectMongoDb = async () => {
     } 
 }
 
+// Uncomment for debug mode
+// mongoose.set('debug', true);
+
 module.exports = { connectMongoDb };
